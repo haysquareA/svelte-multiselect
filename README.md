@@ -7,7 +7,7 @@ Hey there! Welcome to the SvelteKit Custom MultiSelect Component. This component
 First things first, you'll want to install this nifty component. Open up your terminal and type:
 
 ```bash
-npm install @haysquare/svelte-multiselect
+npm install @haysquare/svelte-multi-select
 
 
 And that's it! You're ready to roll!
@@ -24,7 +24,7 @@ If you need only one Custom MultiSelect in your application, simply use it direc
 
 
 <script>
-  import MultiSelect from '@haysquare/svelte-multiselect';
+  import {MultiSelect} from '@haysquare/svelte-multi-select';
 </script>
 
 <MultiSelect
@@ -39,7 +39,7 @@ Multi Use
 If you need multiple instances of Custom MultiSelect, you can import and use it multiple times:
 
 <script>
-  import MultiSelect from '@haysquare/svelte-multiselect';
+  import {MultiSelect} from '@haysquare/svelte-multi-select';
 </script>
 
 <MultiSelect
@@ -65,9 +65,9 @@ Example
 Wanna see it in action? Sure thing!
 
 <script>
-  import MultiSelect from '@haysquare/svelte-multiselect';
+  import {MultiSelect} from '@haysquare/svelte-multi-select';
 
-  let items = ['Apple', 'Banana', 'Orange'];
+  let selectableItems = ['Apple', 'Banana', 'Orange'];
   let selectedItems = [];
 
   function handleSelectionChange(selected) {
